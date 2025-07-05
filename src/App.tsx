@@ -110,8 +110,8 @@ const App: React.FC = () => {
                 </p>
             </header>
             {/* Search and Filter Controls */}
-            <nav className="bg-white flex flex-col md:flex-row justify-between items-start md:items-center p-3 gap-4">
-                <section className="flex flex-col sm:flex-row gap-4 rounded-lg shadow-sm p-6 w-full lg:w-3/5">
+            <nav className="bg-white flex flex-col md:flex-row justify-between items-start md:items-center p-3 gap-4 shadow rounded-2xl mb-5">
+                <section className="flex flex-col sm:flex-row gap-4 p-6 w-full lg:w-3/5">
                     <SearchInput
                         value={searchKeyword}
                         onChange={handleSearch}

@@ -30,7 +30,7 @@ const OrdersGrid: React.FC<OrdersGridProps> = ({ orders, loading }) => {
     }
 
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 p-3 shadow rounded-2xl bg-slate-100">
             {orders?.map((order, index) => (
                 <Card key={order.do_id || index} order={order} />
             ))}
