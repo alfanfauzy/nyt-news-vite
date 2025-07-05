@@ -17,7 +17,7 @@ import type { FilterType } from "./constants/filterOptions";
 import { useOrderFilters } from "./hooks/useOrderFilter";
 import { usePagination } from "./hooks/usePagination";
 
-type Filters = Record<FilterType, string[]>;
+export type Filters = Record<FilterType, string[]>;
 
 // --- Main Component ---
 const App: React.FC = () => {

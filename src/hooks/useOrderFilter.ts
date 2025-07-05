@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 import type { FilterType } from "../constants/filterOptions";
 
-type Filters = Record<FilterType, string[]>;
+export type Filters = Record<FilterType, string[]>;
 type TabSearchKeywords = Record<FilterType, string>;
 
 export const useOrderFilters = () => {

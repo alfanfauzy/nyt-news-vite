@@ -1,10 +1,15 @@
 import type { AxiosResponse } from "axios";
 import type { OrderData, OrderResponse } from "../types/order";
 import { apiClient } from "./config";
+import type { Filters } from "../App";
 
 // API service methods
 export const apiService = {
-    async fetchData(keyword = "", filters, page = 1): Promise<OrderData[]> {
+    async fetchData(
+        keyword = "",
+        filters: Filters,
+        page = 1
+    ): Promise<OrderData[]> {
         try {
             const payload = {
                 keyword: keyword.trim(),
