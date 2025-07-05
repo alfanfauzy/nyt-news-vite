@@ -15,7 +15,7 @@ const Pagination: React.FC<PaginationProps> = ({
     canGoNext = true,
 }) => {
     return (
-        <nav className="flex justify-between items-center gap-10">
+        <nav className="flex justify-between md:justify-between items-center gap-10 w-full">
             <button
                 onClick={onPrevious}
                 disabled={!canGoPrevious}

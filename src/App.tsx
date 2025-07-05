@@ -111,7 +111,7 @@ const App: React.FC = () => {
             </header>
             {/* Search and Filter Controls */}
             <nav className="bg-white flex flex-col md:flex-row justify-between items-start md:items-center p-3 gap-4">
-                <section className="flex flex-col sm:flex-row gap-4 rounded-lg shadow-sm p-6 w-3/5">
+                <section className="flex flex-col sm:flex-row gap-4 rounded-lg shadow-sm p-6 w-full lg:w-3/5">
                     <SearchInput
                         value={searchKeyword}
                         onChange={handleSearch}
@@ -145,7 +145,7 @@ const App: React.FC = () => {
                         />
                     </div>
                 </section>
-                <section className="flex justify-center items-center w-1/5">
+                <section className="flex md:justify-center items-center w-full md:w-1/4 lg:w-1/5 pr-3">
                     {/* Pagination */}
                     <Pagination
                         onPrevious={goToPrevPage}
