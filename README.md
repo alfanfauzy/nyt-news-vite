@@ -1,69 +1,75 @@
-# React + TypeScript + Vite
+# LogKar Exercise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple logistics management UI exercise built with React and Tailwind CSS. This project demonstrates filtering, searching, and paginated data handling on a list of orders.
 
-Currently, two official plugins are available:
+![alt text](/public/image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demo
 
-## Expanding the ESLint configuration
+Live site: [https://log-kar-exercise.netlify.app/](https://log-kar-exercise.netlify.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+-   **React**
+-   **TypeScript**
+-   **Tailwind CSS**
+-   **Zustand** (for state management)
+-   **Axios** (for API calls)
+-   **Vite** (assumed if used instead of CRA)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📦 Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+-   🔍 Debounced search input
+-   🧠 Filter popup with multi-tab filters
+-   📄 Orders displayed in a grid layout
+-   📊 Pagination support
+-   🧼 Reset all filters button
+-   🧪 Type-safe code with TypeScript
+
+## 📁 Project Structure
+
+```bash
+src/
+├── components/
+│   ├── cards/
+│   ├── common/
+│   └── filters/
+├── services/
+├── store/
+├── types/
+├── constants/
+└── App.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧩 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Prerequisites
+Node.js (v16 or newer)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Yarn or npm
+
+## Installation
+
 ```
+# Clone the repository
+git clone https://github.com/your-username/log-kar-exercise.git
+cd log-kar-exercise
+
+# Install dependencies
+yarn install
+# or
+npm install
+
+# Start the development server
+yarn dev
+# or
+npm run dev
+```
+
+### 🧑‍💻 Author
+
+Built with ❤️ by [Alfan Fauzy](https://alfan.web.id)
+
+### 📃 License
+
+MIT — free to use and modify.
