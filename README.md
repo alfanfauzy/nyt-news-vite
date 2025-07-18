@@ -1,59 +1,57 @@
-# LogKar Exercise
+# 📰 NYTimes Article Viewer
+A simple and elegant SPA (Single Page Application) to explore New York Times articles. Built using **React, TypeScript, and Tailwind CSS**, this app supports searching, viewing article details, and paginated results — all with a clean UI inspired by The New York Times.
 
-A simple logistics management UI exercise built with React and Tailwind CSS. This project demonstrates filtering, searching, and paginated data handling on a list of orders.
+![screenshoot](<public/screenshoot.png>)
 
-![alt text](/public/image.png)
-
-## 🚀 Demo
-
-Live site: [https://log-kar-exercise.netlify.app/](https://log-kar-exercise.netlify.app/)
+🚀 Demo
+Live site: https://your-demo-link.vercel.app
 
 ## 🛠️ Tech Stack
-
--   **React**
--   **TypeScript**
--   **Tailwind CSS**
--   **Zustand** (for state management)
--   **Axios** (for API calls)
--   **Vite** (assumed if used instead of CRA)
+- React + TypeScript
+- React Router DOM
+- Tailwind CSS
+- Lucide Icons
+- Vite
+- Axios
 
 ## 📦 Features
+- 🔎 Search articles from the NYTimes API
+- 🧭 SPA routing with detail pages
+- 🧪 Type-safe API layer using custom hooks
+- 🖼️ Responsive, accessible article cards
+- ⏱️ Pagination with usePagination custom hook
+- 💅 Clean UI mimicking the NYTimes style
 
--   🔍 Debounced search input
--   🧠 Filter popup with multi-tab filters
--   📄 Orders displayed in a grid layout
--   📊 Pagination support
--   🧼 Reset all filters button
--   🧪 Type-safe code with TypeScript
-
-## 📁 Project Structure
-
-```bash
+## 🧩 Project Structure
+```
 src/
 ├── components/
-│   ├── cards/
-│   ├── common/
-│   └── filters/
+│   ├── common/         # Reusable UI components like Pagination
+│   ├── layout/         # Layout with Header & Footer
+│   └── ui/             # ArticleCard, SearchInput, etc.
+├── hooks/              # Custom hooks like usePagination
+├── pages/              # Page components for routing
 ├── services/
-├── store/
-├── types/
-├── constants/
-└── App.tsx
+│   └── hooks/          # useArticles hook for API
+├── types/              # TypeScript types
+├── utils/              # Helpers (string/date/article utils)
+├── App.tsx
+├── main.tsx
+└── router.tsx
 ```
 
-## 🧩 Getting Started
+## 🧪 Getting Started
+**Prerequisites**
 
-Prerequisites
-Node.js (v16 or newer)
-
-Yarn or npm
+- Node.js (v16 or newer)
+- Yarn or npm
 
 ## Installation
 
 ```
 # Clone the repository
-git clone https://github.com/your-username/log-kar-exercise.git
-cd log-kar-exercise
+git clone https://github.com/your-username/nytimes-article-viewer.git
+cd nytimes-article-viewer
 
 # Install dependencies
 yarn install
@@ -66,10 +64,17 @@ yarn dev
 npm run dev
 ```
 
-### 🧑‍💻 Author
+## 📸 Preview
+```
+# Build for production
+yarn build
 
-Built with ❤️ by [Alfan Fauzy](https://alfan.web.id)
+# Preview the built app
+yarn preview
+```
 
-### 📃 License
+## 👤 Author
+Built with ❤️ by [Alfan Fauzy](https://www.linkedin.com/in/alfan-fauzy/details/experience/)
 
+## 📄 License
 MIT — free to use and modify.

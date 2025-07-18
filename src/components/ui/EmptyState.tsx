@@ -1,5 +1,5 @@
 import { Search, FileText, TrendingUp } from "lucide-react";
-import { cn } from "@/utils/cn";
+import { cn } from "../../utils/cn";
 
 interface EmptyStateProps {
     title?: string;
