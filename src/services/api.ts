@@ -1,9 +1,10 @@
 import axios from "axios";
+import { BASE_CONFIG } from "../config/config";
 
 // Create axios instance with base configuration
 export const apiClient = axios.create({
-    baseURL: import.meta.env.VITE_API_URL,
-    timeout: 10000,
+    baseURL: BASE_CONFIG.api.baseURL,
+    timeout: BASE_CONFIG.api.timeout,
     headers: {
         "Content-Type": "application/json",
     },
