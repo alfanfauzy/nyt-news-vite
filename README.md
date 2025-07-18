@@ -3,8 +3,8 @@ A simple and elegant SPA (Single Page Application) to explore New York Times art
 
 ![screenshoot](<public/screenshoot.png>)
 
-🚀 Demo
-Live site: https://your-demo-link.vercel.app
+## 🚀 Demo
+Live site: [nyt-news-vite.netlify.app](nyt-news-vite.netlify.app)
 
 ## 🛠️ Tech Stack
 - React + TypeScript
